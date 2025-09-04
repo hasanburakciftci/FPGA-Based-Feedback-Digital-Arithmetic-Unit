@@ -45,3 +45,51 @@ vsim -do scripts/run_vcd.do
 
 Bu komut ile `waves/waves.vcd` dosyası yeniden oluşturulur.  
 Var olan sonuçları incelemek için `waves/feedback_sim.png` ve `waves/waves.vcd` dosyaları kullanılabilir.
+
+-------------------------------------------------------------------------------------------------------------------
+# FPGA-Based Feedback Digital Arithmetic Unit
+
+This project implements a feedback digital arithmetic unit on FPGA.  
+The designed circuit evaluates the following quadratic function:
+
+**f(x) = y = x² + 4x – 2**
+
+Floating-point arithmetic components (`fp_add`, `fp_mult`) based on IEEE-754 32-bit are used in the design.
+
+## Project Purpose
+The purpose of this project is to design a feedback-based computation unit on FPGA
+to evaluate quadratic polynomial functions.  
+Floating-point multipliers and adders are used to compute the function output step by step.
+
+- **Input:** `x` (IEEE-754 32-bit floating-point)  
+- **Output:** `y` (IEEE-754 32-bit floating-point)  
+- **Function:** f(x) = x² + 4x – 2  
+
+## Structure
+- `rtl/fp_add.vhd`: Floating-point adder component  
+- `rtl/fp_mult.vhd`: Floating-point multiplier component  
+- `rtl/proje1.vhd`: Top-level design (feedback arithmetic unit)  
+- `tb/tb_proje1.vhd`: Testbench file  
+- `waves/waves.vcd`: Simulation VCD output  
+- `waves/feedback_sim.png`: Simulation waveform screenshot  
+- `docs/x^2+4x-2.png`: Block diagram of the design  
+
+## Simulation
+The simulation shows that the circuit produces the correct outputs for the given input values.
+
+![Feedback simulation](waves/feedback_sim.png)
+
+## Block Diagram
+
+The following diagram illustrates the quadratic function f(x) = x² + 4x – 2:
+
+![Block diagram](docs/x^2+4x-2.png)
+
+## Run
+To run the simulation in ModelSim/Questa:  
+```tcl
+vsim -do scripts/run_vcd.do
+```
+
+This command regenerates the waves/waves.vcd file.
+To review the existing results, check waves/feedback_sim.png and waves/waves.vcd.

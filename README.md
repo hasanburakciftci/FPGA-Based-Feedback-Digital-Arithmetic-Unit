@@ -1,3 +1,7 @@
+## Languages [TR](#-türkçe) | [EN](#-english)
+
+ ## 🇹🇷 Türkçe
+
 # FPGA Tabanlı Geri Beslemeli Sayısal Aritmetik Birimi
 
 Bu proje, FPGA üzerinde geri beslemeli bir sayısal aritmetik birimi tasarımını içermektedir.  
@@ -47,6 +51,8 @@ Bu komut ile `waves/waves.vcd` dosyası yeniden oluşturulur.
 Var olan sonuçları incelemek için `waves/feedback_sim.png` ve `waves/waves.vcd` dosyaları kullanılabilir.
 
 -------------------------------------------------------------------------------------------------------------------
+ ## 🇬🇧 English
+
 # FPGA-Based Feedback Digital Arithmetic Unit
 
 This project implements a feedback digital arithmetic unit on FPGA.  

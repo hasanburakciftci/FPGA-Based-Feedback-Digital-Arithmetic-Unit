@@ -35,7 +35,7 @@ Simülasyon sonucunda fonksiyonun verilen giriş değerleri için doğru çıkt�
 
 The following diagram illustrates the quadratic function f(x) = x² + 4x – 2:
 
-![Block diagram](docs/x^2+4x-2.png)
+![Block diagram](docs/x^^2+4x-2.png)
 
 ## Çalıştırma
 ModelSim/Questa üzerinde simülasyonu çalıştırmak için:  

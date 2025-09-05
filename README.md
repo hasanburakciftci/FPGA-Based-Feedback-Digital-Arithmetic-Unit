@@ -28,7 +28,7 @@ adım adım hesaplanmaktadır.
 - `tb/tb_proje1.vhd`: Testbench dosyası  
 - `waves/waves.vcd`: Simülasyon VCD çıktısı  
 - `waves/feedback_sim.png`: Simülasyon dalga formu görüntüsü  
-- `docs/x^2+4x-2.png`: Tasarımın blok diyagramı  
+- `docs/x^^2+4x-2.png`: Tasarımın blok diyagramı  
 
 ## Simülasyon
 Simülasyon sonucunda fonksiyonun verilen giriş değerleri için doğru çıktılar ürettiği gözlemlenmiştir.
@@ -78,7 +78,7 @@ Floating-point multipliers and adders are used to compute the function output st
 - `tb/tb_proje1.vhd`: Testbench file  
 - `waves/waves.vcd`: Simulation VCD output  
 - `waves/feedback_sim.png`: Simulation waveform screenshot  
-- `docs/x^2+4x-2.png`: Block diagram of the design  
+- `docs/x^^2+4x-2.png`: Block diagram of the design  
 
 ## Simulation
 The simulation shows that the circuit produces the correct outputs for the given input values.

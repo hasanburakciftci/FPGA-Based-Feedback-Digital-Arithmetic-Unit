@@ -66,7 +66,7 @@ architecture rtl of proje1 is
     signal cnt          : integer := 0;
     signal cnt_end      : integer range 0 to 7;
     
-	signal x_reg : std_logic_vector(31 downto 0) := x; --Başlangıç değeri x atanır
+	signal x_reg : std_logic_vector(31 downto 0) := x; --x is assigned
 begin
     clock <= clock_50;
 

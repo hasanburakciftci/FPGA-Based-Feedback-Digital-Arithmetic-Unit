@@ -31,6 +31,6 @@ begin
     rst <= '0';
 
     wait for 2 us;      -- for 3 cycles
-    assert false report "Simülasyon bitti (3 iterasyon)" severity failure;
+    assert false report "The Simulation is over (3 iteration)" severity failure;
   end process;
 end architecture;

@@ -1,0 +1,57 @@
+# =========================
+# Vivado / FPGA Tool Files
+# =========================
+*.jou
+*.log
+*.str
+*.cache
+*.hw
+*.runs
+*.xpr
+*.sdk
+*.pb
+*.rpt
+*.wcfg
+*.dcp
+
+# Vivado directories
+.vivado/
+.ip_user_files/
+.sim/
+.cache/
+.hw/
+.runs/
+
+# =========================
+# Simulation Outputs
+# =========================
+*.vcd
+*.wlf
+*.fst
+*.ghw
+*.fsdb
+
+# =========================
+# OS / Editor Junk
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*~
+
+# =========================
+# Temporary / Generated
+# =========================
+*.tmp
+*.temp
+*.out
+
+# =========================
+# Do NOT ignore source/docs
+# =========================
+!rtl/
+!tb/
+!docs/
+!waves/

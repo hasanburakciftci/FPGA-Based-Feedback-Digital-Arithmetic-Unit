@@ -22,13 +22,26 @@ Floating-point multipliers and adders are used to compute the function output st
 - **Function:** f(x) = x² + 4x – 2  
 
 ## Structure
-- `rtl/fp_add.vhd`: Floating-point adder component  
-- `rtl/fp_mult.vhd`: Floating-point multiplier component  
-- `rtl/proje1.vhd`: Top-level design (feedback arithmetic unit)  
-- `tb/tb_proje1.vhd`: Testbench file  
-- `waves/waves.vcd`: Simulation VCD output  
-- `waves/feedback_sim.png`: Simulation waveform screenshot  
-- `docs/x^^2+4x-2.png`: Block diagram of the design  
+```
+FPGA-Based-Feedback-Digital-Arithmetic-Unit/
+├── rtl/
+│ ├── fp_add.vhd -- Floating-point adder component
+│ ├── fp_mult.vhd -- Floating-point multiplier component
+│ └── proje1.vhd -- Top-level arithmetic unit
+│
+├── tb/
+│ └── tb_proje1.vhd -- Testbench
+│
+├── waves/
+│ ├── waves.vcd -- Simulation VCD output
+│ └── feedback_sim.png -- Simulation waveform screenshot
+│
+├── docs/
+│ └── x^^2+4x-2.png -- Block diagram of the design
+│
+├── README.md
+└── .gitignore
+```
 
 ## Run
 To run the simulation in ModelSim/Questa:  
@@ -65,13 +78,26 @@ adım adım hesaplanmaktadır.
 - **Fonksiyon:** f(x) = x² + 4x – 2  
 
 ## Yapı
-- `rtl/fp_add.vhd`: Kayan nokta toplama bileşeni  
-- `rtl/fp_mult.vhd`: Kayan nokta çarpma bileşeni  
-- `rtl/proje1.vhd`: Üst seviye tasarım (geri beslemeli aritmetik birim)  
-- `tb/tb_proje1.vhd`: Testbench dosyası  
-- `waves/waves.vcd`: Simülasyon VCD çıktısı  
-- `waves/feedback_sim.png`: Simülasyon dalga formu görüntüsü  
-- `docs/x^^2+4x-2.png`: Tasarımın blok diyagramı  
+```
+FPGA-Based-Feedback-Digital-Arithmetic-Unit/
+├── rtl/
+│ ├── fp_add.vhd -- Kayan nokta (floating-point) toplama birimi
+│ ├── fp_mult.vhd -- Kayan nokta (floating-point) çarpma birimi
+│ └── proje1.vhd -- Üst seviye dijital aritmetik birimi
+│
+├── tb/
+│ └── tb_proje1.vhd -- Tasarım için testbench
+│
+├── waves/
+│ ├── waves.vcd -- Simülasyon çıktısı (VCD)
+│ └── feedback_sim.png -- Geri beslemeli yapı için dalga formu
+│
+├── docs/
+│ └── x^2+4x-2.png -- Tasarımın blok diyagramı
+│
+├── README.md
+└── .gitignore
+```
 
 ## Çalıştırma
 ModelSim/Questa üzerinde simülasyonu çalıştırmak için:  
